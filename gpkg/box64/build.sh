@@ -23,6 +23,6 @@ termux_step_make_install() {
 	if [ "${TERMUX_ARCH}" = "aarch64" ]; then
 		make install
 	elif [ "${TERMUX_ARCH}" = "x86_64" ]; then
-		install -Dm755 box64 -t ${TERMUX_PREFIX}/bin/
+		install -Dm755 box64 -t /data/data/com.gebox.emu/files/usr/glibc/bin/
 	fi
 }
